@@ -1,4 +1,4 @@
-
+// new操作符
 function myNew(fn, ...args) {
   let obj = Object.create(fn.prototype)
   let res = fn.call(obj, ...args)
