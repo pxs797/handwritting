@@ -10,11 +10,11 @@ function debounce(fn, delay) {
 }
 
 // test
-function fn (param) {
-  console.log(param);
+function fn () {
+  console.log('Hello World');
 }
-let deb = debounce(fn, 2000)
-deb('Hello World')
+let test = debounce(fn, 2000)
+test()
 setTimeout(() => {
-  deb('Hello World')
+  test()
 }, 1000);
